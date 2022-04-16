@@ -1,0 +1,213 @@
+*{
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: url("../img/thepalacebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.topbar{
+    background-color: rgb(239,178,178);
+    height: 80px;
+    width: 100%;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+.logo:hover{
+    color: #a17b4a;
+}
+
+.topbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.topbar ul li{
+    display:inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.topbar ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+
+.topbar ul .line{
+    color: red;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.choice:hover{
+    background: #424242;
+    transition: .5s;
+}
+
+#checkbtn{
+    float: right;
+    font-size: 30px;
+    color: white;
+    line-height: 80px;
+    margin-right: 40px;
+    margin-top: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+#user{
+    float: right;
+    color: white;
+    line-height: 80px;
+    font-size: 25px;
+    margin-right: 40px;
+}
+
+#searchicon{
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+#check{
+    display: none;
+
+}
+
+.search-inp{
+    height: 20px;
+}
+.inturn{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 100%;
+    margin-top: -17px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#in_turn{
+    line-height: 100%;
+    text-align: center;
+    margin: 0 auto;    
+}
+.row{
+    position: relative;
+    top: 50%;
+}
+.bttn{
+    background-color: #7c2423;
+    width: 100px;
+    height: 30px;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    border: none;
+    color: white;
+    
+}
+.bttn:hover{
+    color: #e9930a;
+}
+.subpage{
+    margin-top: 50px;
+}
+.elements{
+width: 100px;
+height: 100px;
+margin-bottom: 15px;
+border-radius: 15px;
+cursor: pointer;
+transition: all 0.3s;
+background-color: rebeccapurple;
+}
+.elements:hover{
+    transform: scale(1.2);
+    box-shadow: 0px 0px 8px gold;
+}
+
+.footer{
+    background-color: #666;
+    position: fixed;
+    z-index: 0;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+
+.footer .connect{
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: #b4b3b8;
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.footer a{
+    color: white;
+    margin-right: 10px;
+}
+
+.icons{
+    margin-top: 40px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 1500px){
+    #user{
+        display: none;;
+    }
+
+    #checkbtn{
+        display: block;
+        margin-top: 5px;
+    }
+    
+    .service{
+        position: fixed;
+        width: 100%;
+        height:0;
+        overflow: hidden;
+        background-color: rgb(239,178,178);
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .topbar .service li{
+        display: block;
+    }
+
+
+    .line{
+        visibility: hidden;
+        line-height: 0px;
+        /* 隐藏 */
+    }
+    
+    .topbar .service li a{
+        font-size: 20px;
+    }
+
+    #check:checked ~ .service{
+        height: 100vh;
+    }
+}

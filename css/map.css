@@ -1,0 +1,58 @@
+body:first-child{
+    display: flex;
+    flex-direction: column;
+}
+.nav_color{
+
+    background-color: #7c2423;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+.brand{
+    font-weight: bolder;
+    color: goldenrod !important;
+}
+.brand:hover{
+    color: white !important;
+}
+.nav-link{
+    color: goldenrod;
+    
+}
+.nav_active{
+    color: goldenrod;
+    background-color: black;
+}
+.nav-item>a:hover{
+color: white;
+}
+.toggler_color{
+    color: black;
+}
+.palace_map{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    margin-top: 10%;
+}
+   
+.map_img{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+}
+
+.map_nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}    
+.map_text{
+    font-size: large;
+    font-weight: bolder;
+    display: inline-block;
+    margin-top: 1.3rem;
+}

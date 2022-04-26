@@ -41,14 +41,13 @@ color: white;
 .map_img{
     display: flex;
     flex-direction: row;
-    background-color: black;
+
 }
 
 .map_nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    
+    justify-content: space-around;
 }    
 .map_text{
     font-size: large;

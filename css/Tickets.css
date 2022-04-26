@@ -15,8 +15,13 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
+    color: black;
+    font-weight: bold;
 }
 #individual_tickets{
+margin-top: 10px;
+width: 100px;
+height: 100px;
+background-color: blue;
 
 }

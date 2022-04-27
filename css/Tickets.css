@@ -1,5 +1,11 @@
+body{
+    background-image: url("../img/thepalacebackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 #tickets_part{
-    margin-top: 10%;
+    margin-top: 5%;
     display: flex;
     flex-direction: row;
     justify-content:center;
@@ -18,10 +24,90 @@
     color: black;
     font-weight: bold;
 }
-#individual_tickets{
+#tickets_affair{
 margin-top: 10px;
-width: 100px;
-height: 100px;
-background-color: blue;
-
+width: 1034px;
+height: 917px;
+background-image: url("../img/s59132726189ea.jpg");
+}
+#tickets_affair>h1{
+    margin-top:20px;
+}
+#tickets_affair>div>span{
+    border-color: white;
+    border-style: solid;
+    background-color: rgb(34, 52, 72);
+}
+.tit-span + span {
+    display: inline-block;
+    height: 66px;
+    line-height: 66px;
+    margin-top: -3px;
+}
+.tit-span {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 10px;
+    line-height: 1;
+}
+#tickets_choice{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: white;
+}
+#tickets_choice>span{
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px;
+    width: 300px;
+    display: inline-block;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;
+}
+#tickets_choice>span:hover{
+    background-color: #5b7c9c;
+}
+#tickets_intro{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around ;
+    margin-top: 10%;
+}
+#tickets_intro>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+#tickets_intro>ul{
+    margin-top: 10%;
+    margin-left: 10%;
+}
+#tickets_intro>ul>li{
+    margin-bottom: 20px;
+}
+/* .visible{
+    visibility: hidden !important;
+    transform: .5s;
+} */
+a{
+    text-decoration: none !important;
+    color: white;
+    border-bottom: none;
+}
+a:hover{
+    color: white;
+}
+.link>div>a>div{
+    margin-top: 50px;
+}
+.link>a:hover{
+    overflow: hidden;
+    transition: 1s;
+    transform:rotate(180deg);
 }

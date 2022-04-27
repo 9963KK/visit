@@ -111,6 +111,7 @@ a{
 .row{
     position: relative;
     top: 50%;
+    margin-left: 10%;
 }
 .bttn{
     background-color: #7c2423;

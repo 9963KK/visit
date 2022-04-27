@@ -1,0 +1,33 @@
+body{
+    display: flex;
+    flex-direction: column;
+     background-image: url("../img/thepalacebackground.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#activities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    margin-top: 10%;
+}
+#activities>div{
+    width: 1000px;
+    height: 1000px;
+    background-color: black;
+}
+.activi_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.activi_row>div{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: blue;
+}

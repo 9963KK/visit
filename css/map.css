@@ -1,6 +1,10 @@
-body:first-child{
+body{
     display: flex;
     flex-direction: column;
+     background-image: url("../img/thepalacebackground.jpg");
+     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 .nav_color{
 
@@ -35,7 +39,8 @@ color: white;
    flex-direction: column;
    justify-content: center;
    align-items: center;
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 10%;
 }
    
 .map_img{
@@ -50,6 +55,7 @@ color: white;
     justify-content: space-around;
 }    
 .map_text{
+    color: white;
     font-size: large;
     font-weight: bolder;
     display: inline-block;

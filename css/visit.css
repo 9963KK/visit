@@ -61,6 +61,15 @@ a{
     background: #424242;
     transition: .5s;
 }
+.ppt>div>img{
+    width: 90%;
+    max-height: 400px;
+    height: 100%;
+    object-fit: contain;
+    margin: 0 auto;
+    box-shadow: 0px 12px 14px 0px rgb(12 9 4 / 20%);
+
+}
 
 #checkbtn{
     float: right;
@@ -133,11 +142,13 @@ a{
 .elements{
 width: 100px;
 height: 100px;
+object-fit: contain;
 margin-bottom: 15px;
 border-radius: 15px;
+background-size: cover;
+background-repeat: no-repeat;
 cursor: pointer;
 transition: all 0.3s;
-background-color: rebeccapurple;
 }
 .elements:hover{
     transform: scale(1.2);

@@ -1,33 +1,106 @@
 body{
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
      background-image: url("../img/thepalacebackground.jpg");
      background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    text-align: center;
 }
+
 #activities{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: center;
-    align-content: space-around;
-    margin-top: 10%;
-}
-#activities>div{
-    width: 1000px;
-    height: 1000px;
-    background-color: black;
+    align-items: stretch;
+    margin-top: 0;
+    overflow: hidden;
+    text-align: center;
 }
 .activi_row{
+    float: left;
+    width: 232px;
+    margin-top: 10%;
+}
+.activi_img{
+    width: 220px;
+    height: 314px;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-bottom: 13px;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+    height: auto;
+    transition: .5s;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+img:hover{
+     overflow: hidden;
+    transform: scale(1.1);
+    z-index: 99;
+}
+.article_area{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
-.activi_row>div{
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    background-color: blue;
+.article_area>div{
+    margin-top: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
+    width: 232px;
+    height: 200px;
+    background-color: rgba(124,36,35,0.9);
+    transition: .5s;
 }
+.article_area>div:hover{
+    box-shadow: 0 0 40px rgba(0,0, 0, 0.8);
+}
+.article_area>div>div{
+    overflow: hidden;
+    max-width: 90%;
+    height: 80%;
+    margin: 0 auto;
+    margin-top: 5px;
+}
+a{
+    text-decoration: none !important;
+    color: black;
+}
+.article_link>a{
+    position: relative;
+    float: right;
+    padding-right: 10px;
+    padding-left: 5px;
+    transition: 0.5s;
+    transition-property: all;
+}
+.article_link>a:hover{
+    transform: scaleX(1);
+    transform-origin: left;
+    border-bottom: 10px;
+    color: white;
+    background-color: rgba(0,0, 0, 0.6);
+}
+#some_more{
+    margin-top: 50px;
+display: flex;
+justify-content: center;
+flex-direction: row;
+}
+#some_more>img{
+    width: 100%;
+    height: 40px;
+    max-width: 35%;
+
+}
+#some_more>img{
+    transform: none;
+}
+#some_more>div{float: left;}

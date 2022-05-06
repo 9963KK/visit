@@ -106,8 +106,13 @@ a:hover{
 .link>div>a>div{
     margin-top: 50px;
 }
-.link>a:hover{
+.link>div>a{
+    display: block;
+    transition-property: all;
+    transition-timing-function: ease;
+    transition: 1.5s;
+}
+.link>div>a:hover{
     overflow: hidden;
-    transition: 1s;
     transform:rotate(180deg);
 }
